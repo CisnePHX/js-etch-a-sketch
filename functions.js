@@ -3,6 +3,9 @@
 // Be careful with borders and margins
 //space should be 960px wide
 
+// **create square size as 960 / num of squares desired
+
+
 
 // Set up a “hover” effect (mouse enters and then leaves a div) so that the grid divs change color when your mouse passes over them, 
 // leaving a (pixelated) trail through your grid like a pen would.
