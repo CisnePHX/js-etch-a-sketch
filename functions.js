@@ -11,6 +11,16 @@ let squareSize = 960/totalSquares;
 // **create a loop to create setSquare number of div elements with setSquare number of divs inside it (one for each square)
 // **give each the class of "square"
 
+//start by creating 1 new div square and adding functionality in CSS
+
+const grid = document.getElementById('grid');
+const newDiv = document.createElement('div');
+
+grid.append(newDiv);
+newDiv.className += "square";
+
+console.log(newDiv);
+
 
 // **create "hover" effect by changing background color to edit CSS in javascript via their class id (leaving a pixelated trail)
 
