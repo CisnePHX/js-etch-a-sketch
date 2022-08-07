@@ -9,10 +9,18 @@ body {
     padding: 0px;
     border: 5px;
 }
-
 .info {
     display: flex;
     flex-direction: row;
+}
+.text {
+    margin: 5px;
+    padding: 5px;
+}
+.gridButton{
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
 }
 h1 {
     font-size: 100px;
