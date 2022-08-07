@@ -1,7 +1,7 @@
 /* possibly use this to create a border for the etch-a-sketch */
 
 body {
-    font-family: "roboto", verdana, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -12,21 +12,31 @@ body {
 .info {
     display: flex;
     flex-direction: row;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .text {
     margin: 5px;
     padding: 5px;
 }
 .gridButton{
-    margin: 5px;
+    margin: 15px;
     padding: 5px;
     justify-content: center;
+}
+button {
+    padding: 5px;
+    font-weight: bold;
+    font-size:large;
+    background-color: lightblue;
+    border-radius: 4px;
+    text-shadow: -1px 1px 0 #FFF;
 }
 h1 {
     font-size: 100px;
     border: 0px;
     padding: 0px;
-    border: 0px;
+    margin-bottom: 25px;
     line-height: 2px;
 }
 p {
@@ -34,7 +44,7 @@ p {
     padding: 0px;
     border: 0px;
 }
-h4 {
+h3 {
     border: 0px;
     padding: 0px;
     border: 0px;
