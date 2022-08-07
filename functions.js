@@ -6,7 +6,7 @@
 // **create square size as 960 / num of squares desired for editability in future
 let setSquare = 16;
 let totalSquares = 16 * 16;
-let squareSize = 960/totalSquares;
+let squareSize = 960/setSquare;
 squareSize = squareSize + "px";
 
 // **create a loop to create setSquare number of div elements with setSquare number of divs inside it (one for each square)
@@ -18,14 +18,20 @@ const grid = document.getElementById('grid');
 grid.style.display = "flex";
 grid.style.flexDirection = "row";
 
-for (i = 0; i < setSquare; i++){
-    let newDiv = document.createElement('div');
+for (h = 0; h < setSquare; h++){
+    let newDivRow = document.createElement('div')
+    grid.append(newDivRow);
+    newDivRow.className += "divRow";
 
-    grid.append(newDiv);
-    newDiv.className += "square";
-    newDiv.style.backgroundColor= "black";
-    newDiv.style.height = squareSize;
-    newDiv.style.width = squareSize;
+    for (i = 0; i < setSquare; i++){
+        let newDiv = document.createElement('div');
+
+        newDivRow.append(newDiv);
+        newDiv.className += "square";
+        newDiv.style.backgroundColor= "black";
+        newDiv.style.height = squareSize;
+        newDiv.style.width = squareSize;
+    }
 }
 
 // **create "hover" effect by changing background color to edit CSS in javascript via their class id (leaving a pixelated trail)
