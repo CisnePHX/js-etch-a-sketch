@@ -7,6 +7,7 @@
 let setSquare = 16;
 let totalSquares = 16 * 16;
 let squareSize = 960/totalSquares;
+squareSize = squareSize + "px";
 
 // **create a loop to create setSquare number of div elements with setSquare number of divs inside it (one for each square)
 // **give each the class of "square"
@@ -18,8 +19,9 @@ const newDiv = document.createElement('div');
 
 grid.append(newDiv);
 newDiv.className += "square";
-
-console.log(newDiv);
+newDiv.style.backgroundColor= "black";
+newDiv.style.height = squareSize;
+newDiv.style.width = squareSize;
 
 
 // **create "hover" effect by changing background color to edit CSS in javascript via their class id (leaving a pixelated trail)
