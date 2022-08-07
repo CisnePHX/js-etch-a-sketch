@@ -3,7 +3,10 @@
 // Be careful with borders and margins
 //space should be 960px wide
 
-// **create square size as 960 / num of squares desired
+// **create square size as 960 / num of squares desired for editability in future
+let setSquare = 16;
+let totalSquares = 16 * 16;
+let squareSize = 960/totalSquares;
 
 
 
