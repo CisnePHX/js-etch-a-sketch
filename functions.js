@@ -15,6 +15,8 @@ squareSize = squareSize + "px";
 //start by creating 1 new div square and adding functionality in CSS
 
 const grid = document.getElementById('grid');
+grid.style.display = "flex";
+grid.style.flexDirection = "row";
 
 for (i = 0; i < setSquare; i++){
     let newDiv = document.createElement('div');

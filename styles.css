@@ -16,12 +16,13 @@ body {
 }
 
 #grid {
+    display: flex;
+    flex-direction: column;
     padding: 5px;
 }
 /*
 .square {
-    background-color: black;
-    height: 10px;
-    width: 10px;
+    display: flex;
+    flex-direction: row;
 }
 */
