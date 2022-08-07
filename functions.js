@@ -15,14 +15,16 @@ squareSize = squareSize + "px";
 //start by creating 1 new div square and adding functionality in CSS
 
 const grid = document.getElementById('grid');
-const newDiv = document.createElement('div');
 
-grid.append(newDiv);
-newDiv.className += "square";
-newDiv.style.backgroundColor= "black";
-newDiv.style.height = squareSize;
-newDiv.style.width = squareSize;
+for (i = 0; i < setSquare; i++){
+    let newDiv = document.createElement('div');
 
+    grid.append(newDiv);
+    newDiv.className += "square";
+    newDiv.style.backgroundColor= "black";
+    newDiv.style.height = squareSize;
+    newDiv.style.width = squareSize;
+}
 
 // **create "hover" effect by changing background color to edit CSS in javascript via their class id (leaving a pixelated trail)
 
