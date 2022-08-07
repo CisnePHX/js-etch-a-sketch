@@ -1,20 +1,18 @@
 // Create a default 16 x 16 grid of squares (divs)
 // to make divs appear as a grid, try: float/clear, inline-block, flexbox, CSS Grid
 // Be careful with borders and margins
-//space should be 960px wide
+// space should be 960px wide
 
 // **create square size as 960 / num of squares desired for editability in future
 let setSquare = 16;
 let totalSquares = 16 * 16;
 let squareSize = 960/totalSquares;
 
+// **create a loop to create setSquare number of div elements with setSquare number of divs inside it (one for each square)
+// **give each the class of "square"
 
 
-// Set up a “hover” effect (mouse enters and then leaves a div) so that the grid divs change color when your mouse passes over them, 
-// leaving a (pixelated) trail through your grid like a pen would.
-
-// Can change color of the divs by: adding a new class to the div, changing the div’s background color using JavaScript
-
+// **create "hover" effect by changing background color to edit CSS in javascript via their class id (leaving a pixelated trail)
 
 // Need a button that creates a popup asking for the desired number of squares
 // removes old grid and new grid appears in the space of the same size
