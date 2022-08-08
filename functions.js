@@ -2,13 +2,18 @@
 // to make divs appear as a grid, try: float/clear, inline-block, flexbox, CSS Grid
 // space should be 960px wide
 
+let defaultSquare = 16;
+let currentSquare = 16;
+const grid = document.getElementById('grid');
 
+grid.style.display = "flex";
+grid.style.flexDirection = "row";
 
 function mouseOver(myDiv) {
     myDiv.style.backgroundColor = "white";
 }
 
-function createGrid(numSquare, grid){
+function createGrid(numSquare){
     let squareSize = 960/(numSquare);
     squareSize = squareSize + "px";
 
@@ -55,21 +60,19 @@ function onPrompt() {
         if (sizeRequest > 100) {
             alert("Must be less than 100!");
         }else {
-            defaultSquare = sizeRequest;
+            currentSquare = sizeRequest;
+            deleteGrid();
+            createGrid(currentSquare);
         }
     }
 }
 
 // **create square size as 960 / num of squares desired for editability in future
-let defaultSquare = 16;
-let currentSquare = 16;
-let totalSquares = 16 * 16;
+
 
 // **create a loop to create defaultSquare number of div elements with defaultSquare number of divs inside it (one for each square)
 
-const grid = document.getElementById('grid');
-grid.style.display = "flex";
-grid.style.flexDirection = "row";
+
 
 // **create "hover" effect by changing background color to edit CSS in javascript via their class id (leaving a pixelated trail)
 // **give each div a onmouseover and onmouseout of changing background color to white
