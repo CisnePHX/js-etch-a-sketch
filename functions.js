@@ -16,21 +16,6 @@ grid.style.flexDirection = "row";
 
 // **create "hover" effect by changing background color to edit CSS in javascript via their class id (leaving a pixelated trail)
 // **give each div a onmouseover and onmouseout of changing background color to white
-//function mOver(obj){
-//    obj.backgroundColor = "white";
-//}
-
-//function mOut(obj){
-//    obj.backgroundColor = "white";
-//}
-
-//function mouseOver() {
- //   document.getElementById("square").style.backgroundColor = "white";
-//}
-
-//function mouseOut() {
-//    document.getElementById("square").style.backgroundColor = "white";
-//}
 
 //creates the rows of divs
 for (h = 0; h < setSquare; h++){
@@ -58,16 +43,18 @@ for (h = 0; h < setSquare; h++){
     }
 }
 
-//document.querySelectorAll("#square").onmouseover = function() {mouseOver()};
-//document.querySelectorAll("#square").onmouseout = function () {mouseOut()};
-
 // Need a button that creates a popup asking for the desired number of squares
-// removes old grid and new grid appears in the space of the same size
+// removes old grid and new grid appears in the space of the same size by refreshing page with new setSquare value
 // limit is a max of 100px wide//
 // look into how to make a js script run after a button is pushed
 // look into prompts
 
+document.querySelector("#btn").addEventListener('click', onPrompt);
 
+function onPrompt() {
+    let buttonClick = prompt("How many squares would you like there to be per side?");
+    alert(buttonClick);
+}
 
 
 
