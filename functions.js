@@ -52,8 +52,15 @@ for (h = 0; h < setSquare; h++){
 document.querySelector("#btn").addEventListener('click', onPrompt);
 
 function onPrompt() {
-    let buttonClick = prompt("How many squares would you like there to be per side?");
-    alert(buttonClick);
+    let sizeRequest = prompt("How many squares would you like there to be per side? (less than 100 only)");
+    alert(sizeRequest);
+    if (sizeRequest != null){
+        if (sizeRequest > 100) {
+            alert("Must be less than 100!");
+        }else {
+            setSquare = sizeRequest;
+        }
+    }
 }
 
 
