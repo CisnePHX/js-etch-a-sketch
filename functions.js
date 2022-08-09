@@ -1,6 +1,6 @@
-// Create a default 16 x 16 grid of squares (divs)
-// to make divs appear as a grid, try: float/clear, inline-block, flexbox, CSS Grid
-// space should be 960px wide
+// Creates a default 16 x 16 grid of squares (divs) that fills 960 px.
+// Each square changes from black to white when the mouse passes over it.
+// The grid can be resized by the user via prompt up to 100 squares per side.
 
 let defaultSquare = 16;
 let currentSquare = 16;
@@ -41,12 +41,6 @@ function createGrid(numSquare){
     }
 }
 
-// Need a button that creates a popup asking for the desired number of squares
-// removes old grid and new grid appears in the space of the same size by refreshing page with new defaultSquare value
-// limit is a max of 100px wide//
-// look into how to make a js script run after a button is pushed
-// look into prompts
-
 function deleteGrid(){
     while (grid.hasChildNodes()){
         grid.removeChild(grid.firstChild);
@@ -67,23 +61,11 @@ function onPrompt() {
     }
 }
 
-// **create square size as 960 / num of squares desired for editability in future
-
-
-// **create a loop to create defaultSquare number of div elements with defaultSquare number of divs inside it (one for each square)
-
-
-
-// **create "hover" effect by changing background color to edit CSS in javascript via their class id (leaving a pixelated trail)
-// **give each div a onmouseover and onmouseout of changing background color to white
-//defaultSquare should be numSquare
-
-
-
-// Extra Credit: Instead of just changing the color of a square from black to white (for example), have each pass through 
-// with the mouse change it to a completely random RGB value. Then try having each pass just add another 10% of black to it 
-// so that only after 10 passes is the square completely black.
-
 
 createGrid(defaultSquare, grid);
 document.querySelector("#btn").addEventListener('click', onPrompt);
+
+
+// Extra Credit for future consideration: Instead of just changing the color of a square from black to white, have each pass through 
+// with the mouse change it to a completely random RGB value. Then try having each pass just add another 10% of black to it 
+// so that only after 10 passes is the square completely black.
