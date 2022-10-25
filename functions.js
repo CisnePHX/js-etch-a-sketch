@@ -14,7 +14,7 @@ function mouseOver(myDiv) {
 }
 
 function createGrid(numSquare){
-    let squareSize = 960/(numSquare);
+    let squareSize = 880/(numSquare);
     squareSize = squareSize + "px";
 
     //creates the rows of divs
